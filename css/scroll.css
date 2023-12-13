@@ -1,0 +1,19 @@
+.sticky{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .sticky #logo {
+    /* border: 2px solid yellow; */
+    width: 43rem;
+    padding: 0rem 2rem;
+    font-size: 5rem;
+  }
+  .sticky nav ul li a {
+    font-size: 1.2rem;
+  }
+  
