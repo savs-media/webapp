@@ -40,7 +40,7 @@ nav ul li a{
   transition: all 0.2s;
 }
 nav ul li a:hover{
-  color: rgb(209, 109, 63);
+  color: rgb(221, 143, 42);
 }
 
 
@@ -50,7 +50,9 @@ nav ul li a:hover{
 #logo span{
   font-size: 0.5em;
   font-family: 'Silkscreen', sans-serif;
+  color: rgb(221, 143, 42)
 }
+
 
 main{
   height: 100vh;
