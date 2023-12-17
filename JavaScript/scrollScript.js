@@ -12,3 +12,14 @@ gsap.to("#logo", {
     color: "rgb(36, 30, 26)",
     duration: 1
 });
+
+gsap.to(".nav-item", {
+    scrollTrigger: {
+        trigger: "header",
+        start: "top top",
+        end: "bottom",
+        // scrub: "true"
+        scrub: 1
+    },
+    color: "rgb(36, 30, 26)"
+});
