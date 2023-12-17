@@ -6,9 +6,9 @@ gsap.to("#logo", {
         // scrub: "true"
         scrub: 1
     },
-    fontSize: 70,
+    fontSize: 60,
     left: 0,
-    top: 0,
+    top: 10,
     color: "rgb(36, 30, 26)",
     duration: 1
 });
@@ -23,3 +23,4 @@ gsap.to(".nav-item", {
     },
     color: "rgb(36, 30, 26)"
 });
+
