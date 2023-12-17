@@ -1,21 +1,14 @@
 gsap.to("#logo", {
     scrollTrigger: {
-        trigger: "main",
-        // start: 1,
+        trigger: "header",
+        start: "top top",
+        end: "bottom",
         // scrub: "true"
         scrub: 1
     },
-    fontSize: 6,
-    top: -100,
-    left: -100,
+    fontSize: 70,
+    left: 0,
+    top: 0,
     color: "rgb(36, 30, 26)",
     duration: 1
-});
-
-gsap.to(".nav-item", {
-    scrollTrigger: {
-        trigger: "main",
-        scrub: 1
-    },
-    color: "rgb(36, 30, 26)"
 });

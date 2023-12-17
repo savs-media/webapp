@@ -15,6 +15,7 @@ header{
 }
 nav{
   position: fixed;
+  /* position: sticky; */
   top: 0;
   background-color: rgba(0, 0, 0, 0.178);
   width: 100%;
@@ -49,12 +50,14 @@ nav ul li a:hover{
   /* border: 2px solid; */
   font-size: 15rem;
   position: fixed;
+  padding: 0rem 1rem;
+  /* top: 0; */
   /* color: rgb(226, 226, 188) */
 }
 #logo span{
   font-size: 0.5em;
   font-family: 'Silkscreen', sans-serif;
-  color: rgb(221, 143, 42)
+  color: rgb(221, 143, 42);
 }
 
 
