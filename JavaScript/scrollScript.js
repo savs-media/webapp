@@ -15,5 +15,7 @@ gsap.to("#logo", {
 gsap.to(".nav-item", {
     scrollTrigger: {
         trigger: "main",
-    }
-})
+        scrub: 1
+    },
+    color: "rgb(36, 30, 26)"
+});
