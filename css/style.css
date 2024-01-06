@@ -108,7 +108,7 @@ section{
 
   padding: 0rem 10rem;
 }
-#page-1 p{
+#intro-small{
   font-size: 1.7rem;
   display: flex;
   flex-direction: column;
@@ -126,7 +126,7 @@ section{
   font-family: 'Silkscreen', sans-serif;
 }
 #page-1 div img{
-  width: 40em;
+  width: 30rem;
   border-radius: 300px;
   border: 4px solid rgb(221, 143, 42);
 }
@@ -137,4 +137,48 @@ section{
 }
 #lb-page-1:hover{
   color: rgb(36, 30, 26);
+}
+
+#page-2{
+  height: 100vh;
+  background-color: rgb(36, 30, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page-2-content{
+  padding: 4rem;
+  width: 50%;
+  border: 2px solid rgb(250, 250, 228);
+  color: aliceblue;
+  text-align: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+.form-input{
+  padding: 0.3rem 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+
+  border: none;
+  background-color: rgb(250, 250, 228);
+  color: rgb(36, 30, 26);
+}
+#form-heading{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: rgb(250, 250, 228)
+}
+#submit-button{
+  background-color: rgb(221, 143, 42);
+  color: rgb(250, 250, 228);
+  font-family: 'Silkscreen', sans-serif;
+}
+#submit-button:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 35px 5px rgba(214, 183, 79, 0.493);
 }
