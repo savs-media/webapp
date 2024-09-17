@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(250, 250, 228);
+
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+#page-1{
+    /* background-color: rgb(250, 250, 228); */
+    background-color: rgb(36, 30, 26);
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    text-align: center;
+    /* color: rgb(36, 30, 26); */
+    color: rgb(250, 250, 228);
+    /* background-color: rgba(36, 30, 26, 0.274); */
+    background-color: rgba(250, 250, 228, 0.155);
+    backdrop-filter: blur(20px);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    /* border-style: solid; */
+    width: 100%;
+    position:sticky;
+    top: 0;
+}
+h1 > span{
+    color: rgb(221, 143, 42);
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 30px;
+}
+
+.logo-small{
+    font-weight: 700;
+    /* color: rgb(36, 30, 26); */
+    color: rgb(250, 250, 228);
+}
+.logo-orange{
+    color: rgb(221, 143, 42);
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: 100;
+}
+#mid-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+#left-sec{
+    /* border-style: solid gree; */
+    width: 50%;
+    padding-left: 2rem;
+    /* height: 100rem; */
+}
+#tag-line{
+    font-size: 67px;
+    /* border-style: solid; */
+    margin-top: 5%;
+}
+#tag-line > span{
+    color: rgb(221, 143, 42);
+}
+#wel{
+    /* border-style: solid; */
+    /* margin-top: 5%; */
+}
+#right-sec{
+    /* border: solid red; */
+    width: 40%;
+    /* height: 100vh; */
+    /* padding-top: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 20px;
+    padding-left: 3rem;
+}
+#right-sec > p{
+    padding-bottom: 1rem;
+}
+footer{
+    /* border: solid red; */
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+footer > p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+#social-media{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: solid green; */
+    /* padding-left: 2%; */
+    list-style-type: none;
+    width: 15rem;
+}
+#social-media > li{
+    /* border: solid blue; */
+    margin-left: 2rem;
+    padding-top: 5%;
+    font-size: 19px;
+}
+#social-media > li > a{
+    text-decoration: none;
+    /* color: rgb(36, 30, 26); */
+    color: rgb(250, 250, 228);
+}
+#social-media > li > a:hover{
+    color: orange;
+}
