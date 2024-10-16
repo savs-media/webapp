@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
 }
 html{
   scroll-behavior: smooth;
@@ -9,6 +10,7 @@ html{
 
 header{
   height: 100vh;
+  /* border: solid red; */
   background-color: rgb(36, 30, 26);
   color: whitesmoke;
   display: flex;
@@ -16,16 +18,27 @@ header{
   justify-content: center;
   align-items: center;
 }
+#nav-div{
+  display: flex;
+  justify-content: center;
+}
+#burger-menu{
+  display: none;
+
+}
 nav{
   position: fixed;
   /* position: sticky; */
-  top: 0;
+  top: 1rem;
   background-color: rgba(0, 0, 0, 0.178);
   width: 100%;
-  height: 6rem;
+  height: 4rem;
   /* border: 2px solid red; */
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(50px);
   z-index: 99999;
+  width: 95%;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 nav ul{
   display: flex;
@@ -40,11 +53,11 @@ nav ul li {
 }
 nav ul li a{
   text-decoration: none;
-  color: whitesmoke;
+  color: rgb(226, 226, 188);
   font-size: 1.2em;
   padding: 0rem 3rem;
   transition: all 0.2s;
-  mix-blend-mode: difference;
+  transition: color 0.3s ease;
 }
 nav ul li a:hover{
   color: rgb(221, 143, 42) !important;
@@ -105,16 +118,20 @@ section{
 
 /* PAGE 1 SECTION */
 
-.main-content{
+#page-1{
   display: flex;
+  /* border: 2px solid blue; */
+}
+.main-content{
   /* border: 2px solid red; */
-  height: 100%;
+  padding: 0.5rem 5rem;
+  font-size: 1.7rem;
+  display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
-
-  padding: 0rem 10rem;
 }
-#intro-small{
+/* #intro-small{
   font-size: 1.7rem;
   display: flex;
   flex-direction: column;
@@ -122,7 +139,7 @@ section{
   align-items: center;
   justify-content: center;
   padding: 0rem 2rem;
-}
+} */
 .logo-small{
   font-weight: 700;
   color: rgb(36, 30, 26);
@@ -131,8 +148,16 @@ section{
   color: rgb(221, 143, 42);
   font-family: 'Silkscreen', sans-serif;
 }
-#page-1 div img{
-  width: 30rem;
+#super-image{
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 3rem;
+  box-sizing: border-box;
+}
+#super-image img{
+  width: 120%;
   border-radius: 300px;
   border: 4px solid rgb(221, 143, 42);
 }
@@ -147,44 +172,46 @@ section{
 
 #page-2{
   height: 100vh;
-  background-color: rgba(36, 30, 26, 0.694);
+  background-color: rgb(36, 30, 26);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#page-2-content{
-  padding: 4rem;
-  width: 50%;
-  border: 2px solid rgb(250, 250, 228);
-  color: aliceblue;
-  text-align: center;
-}
-form{
-  display: flex;
-  flex-direction: column;
-}
-.form-input{
-  padding: 0.3rem 2rem;
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
 
-  border: none;
-  background-color: rgb(250, 250, 228);
-  color: rgb(36, 30, 26);
+@media (max-width: 1060px) {
+  #logo{
+    font-size: 8rem;
+  }
+  nav{
+    /* border: 2px solid red; */
+    /* display: none; */
+    font-size: 0.8rem;
+  }
+  .nav-item{
+    padding: 0rem 1.3rem;
+  }
+  .lead-button{
+    width: 20rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 2.5rem;
+  }
+  #lb-page-1{
+    font-size: 0.8rem;
+  }
 }
-#form-heading{
-  font-size: 2rem;
-  margin-bottom: 3rem;
-  color: rgb(250, 250, 228)
-}
-#submit-button{
-  background-color: rgb(221, 143, 42);
-  color: rgb(250, 250, 228);
-  font-family: 'Silkscreen', sans-serif;
-}
-#submit-button:hover{
-  transform: scale(1.05);
-  box-shadow: 0px 0px 35px 5px rgba(214, 183, 79, 0.493);
+
+@media (max-width: 773px){
+  nav{
+    display: none;
+  }
+  #logo{
+    display: none;
+  }
+  #burger-menu{
+    display: flex;
+    position:fixed;
+    left: 0;
+    background-color: rgba(240, 248, 255, 0);
+    color: whitesmoke;
+  }
 }
